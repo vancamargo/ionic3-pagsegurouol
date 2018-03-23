@@ -1,4 +1,4 @@
-import {NgModule, ErrorHandler} from '@angular/core';
+import {NgModule, ErrorHandler, TemplateRef} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
@@ -21,6 +21,7 @@ import {ButtonCartComponent} from "../components/button-cart/button-cart";
 import {CheckoutPage} from "../pages/checkout/checkout";
 import { PaymentHttp } from '../providers/payment-http';
 
+
 @NgModule({
     declarations: [
         MyApp,
@@ -33,6 +34,7 @@ import { PaymentHttp } from '../providers/payment-http';
         MyCartPage,
         ButtonCartComponent,
         CheckoutPage
+
     ],
     imports: [
 
@@ -60,7 +62,8 @@ import { PaymentHttp } from '../providers/payment-http';
         ProductsListPage,
         ProductDetailPage,
         MyCartPage,
-        CheckoutPage
+        CheckoutPage,
+
     ],
     providers: [
         StatusBar,
@@ -69,6 +72,7 @@ import { PaymentHttp } from '../providers/payment-http';
         ProductHttp,
         Cart,
         PaymentHttp,
+
 
     ]
 })
